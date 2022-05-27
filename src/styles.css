@@ -1,4 +1,40 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 30px;
+}
+
+.start_stop {
+  width: 70px;
+  height: 30px;
+  background-color: green;
+  margin: 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.reset {
+  width: 70px;
+  height: 30px;
+  background-color: maroon;
+  margin: 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
 }

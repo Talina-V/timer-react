@@ -44,13 +44,21 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>React Timer</h1>
-        <h3>{this.state.count}</h3>
-        {!this.state.isCounting ? (
-          <button onClick={this.handlerStart}>Start</button>
-        ) : (
-          <button onClick={this.handlerStop}>Stop</button>
-        )}
-        <button onClick={this.handlerReset}>Reset</button>
+        <h3 className="counter">{this.state.count}</h3>
+        <div className="container">
+          {!this.state.isCounting ? (
+            <button className="start_stop" onClick={this.handlerStart}>
+              Start
+            </button>
+          ) : (
+            <button className="start_stop" onClick={this.handlerStop}>
+              Stop
+            </button>
+          )}
+          <button className="reset" onClick={this.handlerReset}>
+            Reset
+          </button>
+        </div>
       </div>
     );
   }
