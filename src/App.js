@@ -55,7 +55,7 @@ export default class App extends Component {
               Stop
             </button>
           )}
-          <button className="reset" onClick={this.handlerReset}>
+          <button className="reset" onClick={this.handlerRaset}>
             Reset
           </button>
         </div>
